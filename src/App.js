@@ -1,11 +1,18 @@
-import ExampleCounterFunction from "./components/ExampleCounterFunction";
-import ExampleCounterClass from "./components/ExampleCounterClass";
+import StateExampleCounterFunction from "./UseStateExample/StateExampleCounterFunction";
+import StateExampleCounterClass from "./UseStateExample/StateExampleCounterClass";
+import EffectExampleCounterFunction from "./UseEffectExample/EffectExampleCounterFunction.js";
 
 function App() {
+   // return (
+   //    <div>
+   //       <StateExampleCounterFunction />
+   //       <StateExampleCounterClass />
+   //    </div>
+   // );
+
    return (
       <div>
-         <ExampleCounterFunction />
-         <ExampleCounterClass />
+         <EffectExampleCounterFunction />
       </div>
    );
 }
