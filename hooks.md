@@ -9,11 +9,18 @@ Hooks are JavaScript functions, but they impose two additional rules:
 
 ## State Hook
 
-We call it inside a function component to add some local state to it. React will preserve this state between re-renders.  
-It’s similar to this.setState in a class, except it doesn’t merge the old and new state together.
+We call it inside a function component to add some local state to it.  
+Normally, variables disappear when the function exits but state variables are preserved by React between re-renders.
+State variables can hold objects and arrays just fine, so you can still group related data together.
+It’s similar to this.setState in a class, except it doesn’t merge the old and new state together,  
+updating a state variable always replaces it instead of merging it.
 
--  useState returns a pair(array destructuring): the current state value and a function that lets you update it.
+-  import the useState Hook from React.
+-  calling useState, declares a state variable ()
 -  The only argument to useState is the initial state.
+-  It returns a pair of values: the current state and a function that updates it.
+   -  When we want to display the current state, we refer it directly
+   -  to update state use set function
 
 ## Effect Hook
 

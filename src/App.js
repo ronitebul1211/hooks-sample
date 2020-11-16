@@ -1,9 +1,11 @@
-import ExampleCounter from "./components/ExampleCounter";
+import ExampleCounterFunction from "./components/ExampleCounterFunction";
+import ExampleCounterClass from "./components/ExampleCounterClass";
 
 function App() {
    return (
       <div>
-         <ExampleCounter />
+         <ExampleCounterFunction />
+         <ExampleCounterClass />
       </div>
    );
 }
